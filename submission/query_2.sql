@@ -1,7 +1,7 @@
 --query that populates the actors table one year at a time.
-insert into vaishnaviaienampudi83291.actors
+insert into actors
 with last_year as( 
-    select * from vaishnaviaienampudi83291.actors
+    select * from actors
     where current_year = 2007
 ), --get the previous year's data from your table
 this_year as (
