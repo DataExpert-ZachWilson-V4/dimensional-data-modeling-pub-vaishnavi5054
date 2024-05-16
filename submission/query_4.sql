@@ -19,6 +19,6 @@ from lagged -- here we are checking if the status of actor  & quality class is s
 select actor_id, quality_class,
 max(is_active)=1,
 min(current_year) as start_date, max(current_year) as end_date,
-2007 as current_year -- we can use the max year from actors table.
+2007 as current_year -- we can use the max(year) from actors table.
 from streaked 
 group by actor_id, streak_identifier, quality_class  -- here we are grouping by actor_id, streak_identifier and quality class to extract start and end_dates for every change.

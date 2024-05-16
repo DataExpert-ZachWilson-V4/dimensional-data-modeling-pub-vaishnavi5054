@@ -8,7 +8,8 @@ this_year as (
     select * from bootcamp.actor_films
     where year = 2008
 ) -- get the latest year's data from source table
---compare last year's data with this year's data to populate the fields. To get all the rows from last_year and this year, we use full outer join
+--compare last year's data with this year's data to populate the fields. 
+--To get all the rows from last_year and this year, we use full outer join
 select 
 coalesce(ly.actor_id,ty.actor_id) as actor_id, -- using coalesce to avoid null values
 coalesce(ly.actor, ty.actor) as actor,

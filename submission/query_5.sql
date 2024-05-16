@@ -90,7 +90,7 @@ when did_change is null then Array[CAST(Row(
 end as changes_array
 from combined
 )
-select distinct actor_id, --using distinct to avoid duplicates if any
+select distinct actor_id, --using distinct to avoid duplicates if there are any
 arr.quality_class,
   arr.is_active,
   arr.start_date,
