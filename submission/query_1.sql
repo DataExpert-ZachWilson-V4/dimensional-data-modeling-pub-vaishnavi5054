@@ -2,7 +2,7 @@
 create table vaishnaviaienampudi83291.actors(
   actor_id VARCHAR,
   actor VARCHAR,
-  films ARRAY(
+  films ARRAY( -- create films array with the required values
     ROW(
       film VARCHAR,
       votes INTEGER,
