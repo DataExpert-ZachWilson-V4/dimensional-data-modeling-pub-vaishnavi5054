@@ -1,5 +1,5 @@
 --create actors table 
---testing with out schema name
+--testing without schema name
 create table actors(
   actor_id VARCHAR,
   actor VARCHAR,
